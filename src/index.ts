@@ -5,7 +5,7 @@ const port = 4500;
 
 const start = async() => {
     try {
-        await moongse.connect("url");
+        await moongse.connect(`mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@${process.env.DB_HOST}/car` );
         console.log("Connected to MongoDB");
     } catch (err){
         console.error(err);

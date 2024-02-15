@@ -25,7 +25,7 @@ const carSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    model: {
+    models: {
         type: String,
         required: true
     },
